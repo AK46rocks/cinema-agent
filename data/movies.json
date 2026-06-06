@@ -1,0 +1,122 @@
+[
+    {
+      "title": "Interstellar",
+      "genre": "Sci-Fi",
+      "overview": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "themes": "space, emotional, survival, time dilation"
+    },
+    {
+      "title": "Blade Runner 2049",
+      "genre": "Sci-Fi",
+      "overview": "A new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos.",
+      "themes": "cyberpunk, futuristic, identity"
+    },
+    {
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "overview": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "themes": "dreams, heist, subconscious, reality"
+    },
+    {
+      "title": "The Matrix",
+      "genre": "Sci-Fi",
+      "overview": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+      "themes": "artificial intelligence, simulation, rebellion, philosophy"
+    },
+    {
+      "title": "Arrival",
+      "genre": "Sci-Fi",
+      "overview": "A linguist works with the military to communicate with alien spacecraft that have landed around the world.",
+      "themes": "aliens, communication, time, grief"
+    },
+    {
+      "title": "Dune",
+      "genre": "Sci-Fi",
+      "overview": "A brilliant and gifted young man born into a great destiny must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+      "themes": "destiny, politics, ecology, space opera"
+    },
+    {
+      "title": "The Martian",
+      "genre": "Sci-Fi",
+      "overview": "An astronaut becomes stranded on Mars after his team assumes him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
+      "themes": "survival, science, isolation, resourcefulness"
+    },
+    {
+      "title": "Ex Machina",
+      "genre": "Sci-Fi",
+      "overview": "A programmer at a huge Internet-search giant is chosen to participate in a synthetic-intelligence experiment by evaluating the human qualities of a highly advanced humanoid A.I.",
+      "themes": "artificial intelligence, manipulation, consciousness, ethics"
+    },
+    {
+      "title": "Children of Men",
+      "genre": "Sci-Fi",
+      "overview": "In 2027, in a chaotic world in which women have somehow become infertile, a former activist agrees to help transport a miraculously pregnant woman to a sanctuary at sea.",
+      "themes": "dystopia, hope, survival, society"
+    },
+    {
+      "title": "Gravity",
+      "genre": "Sci-Fi",
+      "overview": "Two astronauts work together to survive after an accident leaves them stranded in space.",
+      "themes": "survival, space, isolation, resilience"
+    },
+    {
+      "title": "Minority Report",
+      "genre": "Sci-Fi",
+      "overview": "In a future where a special police unit is able to arrest murderers before they commit their crimes, an officer from that unit is himself accused of a future murder.",
+      "themes": "free will, determinism, technology, surveillance"
+    },
+    {
+      "title": "District 9",
+      "genre": "Sci-Fi",
+      "overview": "Violence ensues after an extraterrestrial race forced to live in slum-like conditions on Earth finds a kindred spirit in a government agent exposed to their biotechnology.",
+      "themes": "aliens, segregation, humanity, transformation"
+    },
+    {
+      "title": "Looper",
+      "genre": "Sci-Fi",
+      "overview": "In 2074, when the mob wants to get rid of someone, the target is sent into the past, where a hired gun awaits - until he recognizes his next target as his future self.",
+      "themes": "time travel, fate, paradox, morality"
+    },
+    {
+      "title": "Her",
+      "genre": "Sci-Fi",
+      "overview": "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.",
+      "themes": "artificial intelligence, love, loneliness, connection"
+    },
+    {
+      "title": "Edge of Tomorrow",
+      "genre": "Sci-Fi",
+      "overview": "A soldier fighting aliens gets caught in a time loop of his last battle, growing more skilled with each reset.",
+      "themes": "time loop, alien invasion, warfare, growth"
+    },
+    {
+      "title": "Annihilation",
+      "genre": "Sci-Fi",
+      "overview": "A biologist signs up for a dangerous, secret expedition into a mysterious environmental anomaly where the laws of nature do not apply.",
+      "themes": "mutation, self-destruction, grief, mystery"
+    },
+    {
+      "title": "Contact",
+      "genre": "Sci-Fi",
+      "overview": "Dr. Ellie Arroway, after years of searching, finds conclusive radio proof of extraterrestrial intelligence, sending plans for a mysterious machine.",
+      "themes": "first contact, faith vs science, space exploration"
+    },
+    {
+      "title": "Snowpiercer",
+      "genre": "Sci-Fi",
+      "overview": "In a future where a failed climate-change experiment has killed all life except for the survivors who boarded the Snowpiercer, a train that travels around the globe, a new class system emerges.",
+      "themes": "class warfare, dystopia, climate change, rebellion"
+    },
+    {
+      "title": "Prometheus",
+      "genre": "Sci-Fi",
+      "overview": "Following clues to the origin of mankind, a team finds a structure on a distant moon, but they soon realize they are not alone.",
+      "themes": "creation, cosmic horror, space exploration, origin"
+    },
+    {
+      "title": "Tenet",
+      "genre": "Sci-Fi",
+      "overview": "Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
+      "themes": "time inversion, espionage, physics, fate"
+    }
+  ]
