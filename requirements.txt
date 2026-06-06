@@ -15,3 +15,5 @@ transformers
 langchain-huggingface
 langchain-chroma
 chromadb
+pandas
+genai
