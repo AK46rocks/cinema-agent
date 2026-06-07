@@ -4,15 +4,17 @@
 import os
 from google import genai
 from google.genai import types
-
 from dotenv import load_dotenv
+from app.core.config import settings
+
+
 load_dotenv()
 
 
 def generate():
-    print(os.getenv("GEMINI_API_KEY"))
+    print(settings.GEMINI_API_KEY)
     client = genai.Client(
-        api_key=os.getenv("GEMINI_API_KEY"),
+        api_key=settings.GEMINI_API_KEY,
     )
     
     model="gemini-3.5-flash"
@@ -20,7 +22,7 @@ def generate():
         types.Content(
             role="user",
             parts=[
-                types.Part.from_text(text="Inception movie director name and it's release year"),
+                types.Part.from_text(text="Who is the Lead actor in the movie Pushpa"),
             ],
         ),
     ]
@@ -50,12 +52,3 @@ if __name__ == "__main__":
     generate()
 
 
-
-# client = genai.Client()
-
-# response = client.models.generate_content(
-#     model="gemini-3.5-flash",
-#     contents="Inception movie director name"
-# )
-
-# print(response.text)
