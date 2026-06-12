@@ -41,7 +41,7 @@ def rag_pipeline(user_query):
     return response.text
 
 
-query = "recommend 3 comedy Action movie"
+query = "recommend thriller movie"
 
 res = rag_pipeline(query)
 print(res)

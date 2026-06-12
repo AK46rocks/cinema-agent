@@ -17,3 +17,4 @@ langchain-chroma
 chromadb
 pandas
 genai
+httpx
