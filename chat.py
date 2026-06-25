@@ -13,16 +13,15 @@ load_dotenv()
 
 def generate():
     print(settings.GEMINI_API_KEY)
-    client = genai.Client(
-        api_key=settings.GEMINI_API_KEY,
-    )
+    print("Is the key secretly hidden in my system environment?", "GEMINI_API_KEY" in os.environ)
+    client = genai.Client()
     
     model="gemini-3.5-flash"
     contents = [
         types.Content(
             role="user",
             parts=[
-                types.Part.from_text(text="Who is the Lead actor in the movie Pushpa"),
+                types.Part.from_text(text="Whats weather in UK"),
             ],
         ),
     ]

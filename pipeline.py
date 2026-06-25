@@ -121,7 +121,7 @@ def run_cinemaverse_llm_agent(user_query: str):
     return response.text
 
 
-user_query = "Who is Christoper Nolan"
+user_query = "Who directed Interstellar?"
 print(user_query)
 llm_result = run_cinemaverse_llm_agent(user_query)
 print("AI response:--",llm_result)

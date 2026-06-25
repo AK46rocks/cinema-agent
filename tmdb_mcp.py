@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 import os
 import httpx
 from dotenv import load_dotenv
@@ -38,27 +38,51 @@ async def get_popular_movies():
 
     return response.json()
 
-@app.get('/trending')
-async def getTrending():
+@app.get('/trending/{media_type}')
+async def getTrending(media_type:str, request: Request):
     async with httpx.AsyncClient() as httpClient:
+
+        #Query Params
+        # query_params = {**request.query_params,"api_key":TMDB_API}
+        query_params = request.query_params
+        print("query_params: ",query_params)
+        print("media_type: ",media_type)
+
         response = await httpClient.get(
-            f"{BASE_URL}/trending/movie/week",
-            params={"api_key":TMDB_API}
+                f"{BASE_URL}/discover/{media_type}?api_key={TMDB_API}&{query_params}"
             )
         
-        print("response---------",response)
+        print("TMDB response---------",response)
         
         if(response.status_code != 200):
             raise HTTPException(status_code=response.status_code, detail="TMDB api error, please check the api")
         
         data = response.json()
-        
+         
+        if not data:
+            return {"status":"failed","data":"None"}
+
         trending_movie_block = []
-        for movie in data['results'][:5]:
-            movie_summary = f"Title: {movie['title']}|Overview: {movie['overview']}|Release date: {movie['release_date']}"
+
+        title_key = "title" if media_type == "movie" else "name"
+        date_key = "release_date" if media_type == "movie" else "first_air_date"
+        
+        for movie in data['results'][:10]:
+
+            title = movie.get(title_key, "Unknown Title")
+            date = movie.get(date_key, "N/A")
+            overview = movie.get("overview", "No Plot overview found.")
+
+            if len(overview) > 140:
+                overview = overview[:137] + "..."
+
+            movie_summary = f"- **{title}** ({date}) \n Plot: {overview}"
             trending_movie_block.append(movie_summary)
         
-        return {"status":"success","data": '\n\n'.join(trending_movie_block)}
+        clean_payload = '\n'.join(trending_movie_block)
+        print("T:-",clean_payload)
+        
+        return {"status":"success","data": clean_payload}
 
 @app.get("/search-movie/{movie_name}")
 async def search_movie(movie_name: str):
